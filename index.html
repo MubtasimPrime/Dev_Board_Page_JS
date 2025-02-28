@@ -11,12 +11,50 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .bg-blue {
+        background-color: #f4f7ff;
+      }
+    </style>
   </head>
-  <body class="bg-[#F4F7FF] min-h-screen">
+  <body class="bg-blue min-h-screen poppins-font">
     <!-- Header section -->
-    <section class="max-w-screen-2xl mx-auto">
-      <header>
-        <nav></nav>
+    <section class="max-w-screen-2xl mx-auto py-5">
+      <header class="bg-white rounded-2xl">
+        <nav class="flex justify-between px-6 py-2">
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="" />
+            <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+          </div>
+          <!-- Right part -->
+          <div class="flex items-center gap-9">
+            <div class="flex items-center bg-blue rounded-full py-1 px-7 gap-3">
+              <img src="assets/checkbox.png" alt="" />
+              <p class="text-[2rem] font-bold">23</p>
+            </div>
+            <img
+              class="bg-blue rounded-full p-3 cursor-pointer"
+              src="assets/theme-btn.png"
+              alt=""
+            />
+          </div>
+        </nav>
       </header>
     </section>
   </body>
