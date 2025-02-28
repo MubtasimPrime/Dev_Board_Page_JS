@@ -30,6 +30,9 @@
       .bg-blue {
         background-color: #f4f7ff;
       }
+      .bg-dark-blue {
+        background-color: #3752fd;
+      }
     </style>
   </head>
   <body class="bg-blue min-h-screen poppins-font">
@@ -57,5 +60,39 @@
         </nav>
       </header>
     </section>
+
+    <!-- Main Section -->
+    <main class="max-w-screen-2xl mx-auto">
+      <section class="flex justify-between gap-6">
+        <!-- Right part -->
+        <div class="bg-white w-[75%] rounded-2xl">
+          <h1>Hello</h1>
+        </div>
+        <!-- Left part -->
+        <div class="bg-white w-[25%] rounded-2xl flex flex-col items-center">
+          <!-- Activity log -->
+          <div class="flex gap-4 mt-4 items-center justify-center mb-3">
+            <img src="assets/activity.png" alt="" />
+            <h3 class="text-xl font-medium">Activity Log</h3>
+          </div>
+          <button
+            class="bg-dark-blue mb-4 rounded-lg py-3 px-5 text-white font-medium cursor-pointer"
+          >
+            Clear History
+          </button>
+          <div class="">
+            <img src="assets/Line 3.png" alt="" />
+          </div>
+          <div>
+            <p class="bg-blue m-5 rounded-lg p-2">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+            <p class="bg-blue m-5 rounded-lg p-2">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
