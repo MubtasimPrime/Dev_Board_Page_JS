@@ -5,5 +5,14 @@ btn.forEach((event) => {
     e.target.disabled = true;
     e.target.style.cursor = "not-allowed";
     e.target.style.opacity = "0.3";
+
+    // Increment
+    let task = document.getElementById("task-assign");
+    let convertedTaskValue = parseInt(task.innerText);
+
+    if (convertedTaskValue > 0) {
+      convertedTaskValue--;
+      task.innerText = convertedTaskValue;
+    }
   });
 });
