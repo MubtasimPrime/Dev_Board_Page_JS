@@ -19,5 +19,11 @@ btn.forEach((event) => {
     }
 
     // Decrement
+    let task2 = document.getElementById("check-box");
+    let convertedTaskValue2 = parseInt(task2.innerText);
+    if (convertedTaskValue2 != "string") {
+      convertedTaskValue2++;
+      task2.innerText = convertedTaskValue2;
+    }
   });
 });
