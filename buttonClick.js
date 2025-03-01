@@ -11,8 +11,13 @@ btn.forEach((event) => {
     let convertedTaskValue = parseInt(task.innerText);
 
     if (convertedTaskValue > 0) {
+      if (convertedTaskValue === 1) {
+        alert("Congrats!!! You have completed all the current task");
+      }
       convertedTaskValue--;
       task.innerText = convertedTaskValue;
     }
+
+    // Decrement
   });
 });
