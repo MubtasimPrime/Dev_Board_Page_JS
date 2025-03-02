@@ -17,7 +17,7 @@ btn.forEach((event) => {
       let createPTag = document.createElement("p");
       createPTag.classList.add("bg-blue", "m-5", "rounded-lg", "p-2");
 
-      // Date
+      // Present Time
       let currentDate = new Date();
       let presentTime = currentDate.toLocaleTimeString();
       // console.log(presentTime);
