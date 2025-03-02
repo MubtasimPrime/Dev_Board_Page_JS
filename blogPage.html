@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Page</title>
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .bg-blue {
+        background-color: #f4f7ff;
+      }
+      .bg-dark-blue {
+        background-color: #3752fd;
+      }
+    </style>
+  </head>
+  <body class="bg-blue min-h-screen poppins-font">
+    <!-- Header section -->
+    <section class="max-w-screen-2xl mx-auto py-5">
+      <header class="bg-white rounded-2xl">
+        <nav class="flex justify-between px-6 py-2">
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="" />
+            <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+          </div>
+          <!-- Right part -->
+          <div class="flex items-center justify-normal">
+            <button
+              id="back-desk-btn"
+              class="bg-dark-blue rounded-lg py-2 px-7 text-white font-medium cursor-pointer"
+            >
+              Back to Desk
+            </button>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+    <section class="max-w-screen-2xl mx-auto">
+      <h1 class="text-center font-bold text-2xl">Blogs</h1>
+      <div class="pb-6">
+        <!-- 1 -->
+        <div class="bg-white rounded-xl mt-4">
+          <h2 class="p-4 font-bold text-[1.125rem]">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+          <div class="border border-dashed border-blue-100"></div>
+          <p class="p-4 text-[1rem]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+            officiis accusantium natus maxime! Aliquid blanditiis necessitatibus
+            itaque quidem veniam adipisci, dicta dignissimos dolorum iure
+            distinctio perspiciatis suscipit earum, libero ex a tempora quod
+            molestiae in totam minus eius alias impedit?
+          </p>
+        </div>
+        <!-- 2 -->
+        <div class="bg-white rounded-xl mt-4">
+          <h2 class="p-4 font-bold text-[1.125rem]">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h2>
+          <div class="border border-dashed border-blue-100"></div>
+          <p class="p-4 text-[1rem]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+            officiis accusantium natus maxime! Aliquid blanditiis necessitatibus
+            itaque quidem veniam adipisci, dicta dignissimos dolorum iure
+            distinctio perspiciatis suscipit earum, libero ex a tempora quod
+            molestiae in totam minus eius alias impedit?
+          </p>
+        </div>
+        <!-- 3 -->
+        <div class="bg-white rounded-xl mt-4">
+          <h2 class="p-4 font-bold text-[1.125rem]">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+          <div class="border border-dashed border-blue-100"></div>
+          <p class="p-4 text-[1rem]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+            officiis accusantium natus maxime! Aliquid blanditiis necessitatibus
+            itaque quidem veniam adipisci, dicta dignissimos dolorum iure
+            distinctio perspiciatis suscipit earum, libero ex a tempora quod
+            molestiae in totam minus eius alias impedit?
+          </p>
+        </div>
+        <!-- 4 -->
+        <div class="bg-white rounded-xl mt-4">
+          <h2 class="p-4 font-bold text-[1.125rem]">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+          <div class="border border-dashed border-blue-100"></div>
+          <p class="p-4 text-[1rem]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+            officiis accusantium natus maxime! Aliquid blanditiis necessitatibus
+            itaque quidem veniam adipisci, dicta dignissimos dolorum iure
+            distinctio perspiciatis suscipit earum, libero ex a tempora quod
+            molestiae in totam minus eius alias impedit?
+          </p>
+        </div>
+        <!-- 5 -->
+        <div class="bg-white rounded-xl mt-4">
+          <h2 class="p-4 font-bold text-[1.125rem]">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h2>
+          <div class="border border-dashed border-blue-100"></div>
+          <p class="p-4 text-[1rem]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+            officiis accusantium natus maxime! Aliquid blanditiis necessitatibus
+            itaque quidem veniam adipisci, dicta dignissimos dolorum iure
+            distinctio perspiciatis suscipit earum, libero ex a tempora quod
+            molestiae in totam minus eius alias impedit?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById("back-desk-btn").addEventListener("click", () => {
+        window.location.href = "./index.html";
+      });
+    </script>
+  </body>
+</html>

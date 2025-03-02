@@ -88,6 +88,7 @@
             </div>
             <!-- 2 -->
             <div
+              id="discover-today"
               class="flex items-center justify-normal bg-[linear-gradient(to_right,#3752FD_0%,#6C7FFA_53%,#9BA8F8_100%)] rounded-xl col-span-2 col-start-2 gap-3 cursor-pointer"
             >
               <img class="ml-10" src="assets/board.png" alt="" />
@@ -326,5 +327,12 @@
     <script src="buttonClick.js"></script>
     <script src="randomBgColor.js"></script>
     <script src="clearHistoryButton.js"></script>
+    <script>
+      document
+        .getElementById("discover-today")
+        .addEventListener("click", () => {
+          window.location.href = "./blogPage.html";
+        });
+    </script>
   </body>
 </html>
